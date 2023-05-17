@@ -1,0 +1,60 @@
+.nav-container {
+  position: relative;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+  padding: 0 5px;
+  max-width: 1160px;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    margin: 0 10px;
+    list-style: none;
+  }
+}
+
+.navbar-main {
+  display: block;
+
+  ul {
+    display: flex;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.navbar-responsive {
+  position: absolute;
+  top: 37px;
+  right: 0;
+  background-color: white;
+  display: none;
+  z-index: 99;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.nav-menue-icon {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}

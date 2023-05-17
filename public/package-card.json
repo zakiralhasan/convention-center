@@ -1,0 +1,54 @@
+[
+    {
+        "id": "a1",
+        "price": "300",
+        "title": "Business fair",
+        "subTitle": "For most businesses event like book fair, craft fair.",
+        "options": [
+            "limited space access",
+            "Secuirty facility",
+            "event support",
+            "Decoration design",
+            "Per day bill"
+        ]
+    },
+    {
+        "id": "a2",
+        "price": "500",
+        "title": "Wedding basic",
+        "subTitle": "For weddings with basic plan and limited item.",
+        "options": [
+            "Full space access",
+            "Food arrangement",
+            "mangement support",
+            "Decoration design",
+            "Billed as shift"
+        ]
+    },
+    {
+        "id": "a3",
+        "price": "800",
+        "title": "Wedding plus",
+        "subTitle": "For most weddings with premium plans.",
+        "options": [
+            "Full space access",
+            "Dedicated team",
+            "Buffet food",
+            "premium Decoration",
+            "pay as plan"
+        ]
+    },
+    {
+        "id": "a4",
+        "price": "1200",
+        "title": "Corporate event",
+        "subTitle": "For most corporate business events.",
+        "options": [
+            "Full space access",
+            "Dedicated team",
+            "Buffet food",
+            "premium Decoration",
+            "pay as plan"
+        ]
+    }
+]

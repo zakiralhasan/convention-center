@@ -1,0 +1,76 @@
+.package-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    justify-items: center;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+.package-card-wrapper {
+    max-width: 232px;
+    max-height: 387px;
+    padding: 5px;
+    // border: 1px solid red;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: #838099;
+        margin-bottom: 8px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    button {
+        background-color: #FDF4FA;
+        color: #3F87F5;
+        border: none;
+        padding: 3px 6px;
+        width: 80%;
+        border-radius: 16px;
+        margin: 15px 9%;
+    }
+
+    .package-card-optin {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #838099;
+
+        .package-card-optin__tick {
+            background-color: #EDEBF8;
+            color: #3F87F5;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+    }
+}
+
+.package-card-wrapper-active {
+    @extend .package-card-wrapper;
+    background-color: #3F87F5;
+    color: white;
+    border-radius: 9px;
+    padding: 10px;
+    transition: 0.3s;
+
+    p {
+        color: white;
+    }
+
+    span {
+        color: white;
+    }
+}

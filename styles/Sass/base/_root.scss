@@ -1,0 +1,27 @@
+/* Default CSS Variables */
+
+/*==============================
+ * ! Default CSS Variables
+ * As scss is not fully compatible with CSS,
+ * We need embed this variable
+============================== */
+
+:root {
+  //Have to write all default CSS variable here
+  --projectName-body-text-color: #{$black};
+  --projectName-body-bg-color: #{$white};
+
+  --projectName-h1-font-size: #{$h-1};
+  --projectName-h2-font-size: #{$h-2};
+  --projectName-h3-font-size: #{$h-3};
+  --projectName-h4-font-size: #{$h-4};
+  --projectName-h5-font-size: #{$h-5};
+  --projectName-h6-font-size: #{$h-6};
+
+  --projectName-h1-font-weight: #{$fw-medium};
+  --projectName-h2-font-weight: #{$fw-medium};
+  --projectName-h3-font-weight: #{$fw-medium};
+  --projectName-h4-font-weight: #{$fw-normal};
+  --projectName-h5-font-weight: #{$fw-normal};
+  --projectName-h6-font-weight: #{$fw-light};
+}

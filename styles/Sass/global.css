@@ -1,0 +1,691 @@
+/*=============================================
+=            TABLE OF CONTENTS               =
+=============================================*/
+/**
+ *
+ * FOUNDATION...........................
+ * BASE................................
+ * COMPONENTS..........................
+ * PAGES...............................
+ *
+ */
+/*=============================================
+=            Foundations                     =
+=============================================*/
+/*=============================================
+=            VARIABLES                        =
+=============================================*/
+/**
+ * TABLE OF CONTENTS
+ * 
+ * COLORS
+ * Brand colors.......................These are the main brand colors. They will be used the most.
+ * Neutral colors ....................White and black, gray.
+ * Utility colors..................... Other colors to represent states: info, warning, success.
+ *
+ * TYPOGRAPHY
+ * Font Families.....................The fonts used in the design system.
+ * Font Weights..................... Font weights.
+ * Font Sizes............................ Font sizing for body text, paragraph, inputs
+ * 
+ * BREAKPOINTS
+ * Breakpoints ......................Global responsive breakpoints definitions.
+ * 
+ * SPACING
+ * Spacing........................Global fixed set of spacing variables
+ *
+ * SHADOW
+ * Shadow ...........................global fixed set of shadow variables
+ * 
+ */
+/*=============================================
+=            COLORS                           =
+=============================================*/
+/* Brand colors */
+/* Neutral colors */
+/* Utility colors */
+/*=====  End of colors  ======*/
+/*=============================================
+=            TYPOGRAPHY                      =
+=============================================*/
+/* Font Family */
+/* Font Weight */
+/* Font Sizes */
+/* Heading Font Sizes */
+/*=====  End of typography  ======*/
+/*=============================================
+=            BREAKPOINTS                      =
+=============================================*/
+/*=============================================
+=            Spacing                          =
+=============================================*/
+/*=====  End of Spacing  ======*/
+/*=============================================
+=                  Shadows                    =
+=============================================*/
+/*=====  End of Shadows  ======*/
+/*=============================================
+=        Foundation - Typography              =
+=============================================*/
+/**
+ * This file defines the default font sizes to be used on headings and texts. The defaults come
+ * from the palette defined in _variables.scss.
+ */
+/*=============================================
+=            Body font family                  =
+=============================================*/
+/*=============================================
+=            Body font sizes                  =
+=============================================*/
+/*=============================================
+=            Heading font sizes               =
+=============================================*/
+/*=============================================
+=            Head font weights                =
+=============================================*/
+/*=============================================
+=            Foundation - colors              =
+=============================================*/
+/*==================================================
+ This file defines the actual colors that will be used for styling. They will default to the palette
+ we defined in the _variable.scss file. This is our default palette, and devs can override this
+ with their own variables. 
+================================================== */
+/*==================================================
+ # Defining a SCSS Variable: [Instructions]
+ 1. define a name
+ 2. value of the variable will be a css var, 
+    so the consumer of the design system won't have to use scss
+ 3. default value will be a scss variable that we declared previously
+ 4. added !default flag so consumer of the design system can override the scss variable 
+ 5. the --projectName prefix of the variable name is a namespace (project name)
+  [projectName - design system for engineering]
+================================================== */
+/*Below, we have to create different types of sections, components etc. color 
+whit the help of color verabiles*/
+/*=============================================
+=            Global text colors               =
+=============================================*/
+/*=====  End of Text Color  ======*/
+/*=============================================
+=                   Buttons                   =
+=============================================*/
+/*=====  End of Buttons  ======*/
+/*=============================================
+=                    Forms                    =
+=============================================*/
+/*=============================================
+=            FOUNDATIONS - mixins             =
+=============================================*/
+/**
+ *
+ * Helpful reusable function-like things that will be used to implement
+ * styles for components.
+ *
+ */
+/*=============================================
+=            Responisve                       =
+=============================================*/
+/*=============================================
+=            padding, margin, shadow          =
+=============================================*/
+/*=============================================
+=            carousel arrow button         =
+=============================================*/
+/*=============================================
+=            FAQ arrow button         =
+=============================================*/
+/*=============================================
+=            Base                             =
+=============================================*/
+/* Default CSS Variables */
+/*==============================
+ * ! Default CSS Variables
+ * As scss is not fully compatible with CSS,
+ * We need embed this variable
+============================== */
+:root {
+  --projectName-body-text-color: black;
+  --projectName-body-bg-color: white;
+  --projectName-h1-font-size: 1.5rem;
+  --projectName-h2-font-size: 1.375rem;
+  --projectName-h3-font-size: 1.125rem;
+  --projectName-h4-font-size: 1rem;
+  --projectName-h5-font-size: 0.75rem;
+  --projectName-h6-font-size: 0.75rem;
+  --projectName-h1-font-weight: 500;
+  --projectName-h2-font-weight: 500;
+  --projectName-h3-font-weight: 500;
+  --projectName-h4-font-weight: 400;
+  --projectName-h5-font-weight: 400;
+  --projectName-h6-font-weight: 300;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*===========================================
+=             It is optional                =
+==============================================*/
+.lms-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/*=============================================
+=            Components                       =
+=============================================*/
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+  padding: 0 5px;
+  max-width: 1160px;
+}
+.nav-container a {
+  text-decoration: none;
+}
+.nav-container li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+.navbar-main {
+  display: block;
+}
+.navbar-main ul {
+  display: flex;
+}
+@media screen and (max-width: 48rem) {
+  .navbar-main {
+    display: none;
+  }
+}
+
+.navbar-responsive {
+  position: absolute;
+  top: 37px;
+  right: 0;
+  background-color: white;
+  display: none;
+  z-index: 99;
+}
+.navbar-responsive ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 48rem) {
+  .navbar-responsive {
+    display: block;
+  }
+}
+
+.nav-menue-icon {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .nav-menue-icon {
+    display: block;
+  }
+}
+
+.footer-wrapper {
+  background-color: #0b0d17;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 56px 165px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #0b0d17;
+  color: white;
+  align-items: center;
+}
+@media screen and (max-width: 48rem) {
+  .footer-container {
+    gap: 30px;
+    flex-direction: column-reverse;
+    margin: 56px 5px;
+  }
+}
+
+.footer-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.footer-icon-container img {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.footer-container__right-section p {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-img-container {
+  width: auto;
+  height: 584px;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-title-container {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  text-align: center;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-title-container h3 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+.carousel-title-container p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.carousel-title-container button {
+  color: #3f87f5;
+  background-color: white;
+  padding: 6px 25px;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (max-width: 48rem) {
+  .carousel-title-container {
+    left: 25%;
+    max-width: 320px;
+  }
+  .carousel-title-container h3 {
+    font-size: 24px;
+  }
+}
+
+.carosuel-left-arrow, .carosuel-right-arrow {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.carosuel-right-arrow {
+  right: 0;
+}
+
+.hero-section-container {
+  max-width: 1160px;
+  display: flex;
+  margin: 100px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+@media screen and (max-width: 48rem) {
+  .hero-section-container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+
+.hero-section-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section-image-wrapper img {
+  max-width: 546px;
+  max-height: 364px;
+}
+@media screen and (max-width: 48rem) {
+  .hero-section-image-wrapper img {
+    max-width: 328px;
+    max-height: 214px;
+    margin-bottom: 20px;
+  }
+}
+
+.hero-section-img__button {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .hero-section-img__button {
+    display: block;
+  }
+}
+
+.hero-section-content-wrapper h3 {
+  font-weight: 700;
+  font-size: 38px;
+}
+.hero-section-content-wrapper p {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-section-content__button {
+  display: block;
+}
+@media screen and (max-width: 48rem) {
+  .hero-section-content__button {
+    display: none;
+  }
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 8px;
+  border: none;
+  background-color: #3f87f5;
+  color: white;
+  cursor: pointer;
+}
+
+.package-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  justify-items: center;
+}
+@media screen and (max-width: 48rem) {
+  .package-card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .package-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.package-card-wrapper, .package-card-wrapper-active {
+  max-width: 232px;
+  max-height: 387px;
+  padding: 5px;
+}
+.package-card-wrapper h2, .package-card-wrapper-active h2 {
+  margin-bottom: 15px;
+}
+.package-card-wrapper p, .package-card-wrapper-active p {
+  color: #838099;
+  margin-bottom: 8px;
+}
+.package-card-wrapper span, .package-card-wrapper-active span {
+  font-size: 14px;
+}
+.package-card-wrapper button, .package-card-wrapper-active button {
+  background-color: #FDF4FA;
+  color: #3F87F5;
+  border: none;
+  padding: 3px 6px;
+  width: 80%;
+  border-radius: 16px;
+  margin: 15px 9%;
+}
+.package-card-wrapper .package-card-optin, .package-card-wrapper-active .package-card-optin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #838099;
+}
+.package-card-wrapper .package-card-optin .package-card-optin__tick, .package-card-wrapper-active .package-card-optin .package-card-optin__tick {
+  background-color: #EDEBF8;
+  color: #3F87F5;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.package-card-wrapper-active {
+  background-color: #3F87F5;
+  color: white;
+  border-radius: 9px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.package-card-wrapper-active p {
+  color: white;
+}
+.package-card-wrapper-active span {
+  color: white;
+}
+
+.client-comments-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+  margin: 0 20px;
+}
+@media screen and (max-width: 48rem) {
+  .client-comments-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .client-comments-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.client-comments-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0px 6px 15px -5px #888888;
+}
+.client-comments-wrapper img {
+  width: 65px;
+  height: 65px;
+  margin: 15px 0;
+}
+
+.client-name-continer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25px;
+}
+.client-name-continer p {
+  margin-top: -25px;
+  color: #5D5D5D;
+}
+
+.faq-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 9px;
+}
+.faq-container img {
+  flex-basis: 50%;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 48rem) {
+  .faq-container {
+    flex-direction: column-reverse;
+  }
+}
+
+.faq-content-wrapper {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 48rem) {
+  .faq-content-wrapper {
+    width: 100%;
+  }
+}
+
+.faq-wrapper {
+  position: relative;
+  border: 1px solid rgb(207, 207, 210);
+  border-radius: 3px;
+  padding: 5px;
+}
+.faq-wrapper h3 {
+  margin-right: 15px;
+}
+.faq-wrapper p {
+  display: none;
+}
+.faq-wrapper .faq-down-arrow-symbol {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  cursor: pointer;
+}
+.faq-wrapper .faq-up-arrow-symbol {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.faq-wrapper-active {
+  position: relative;
+  border: 1px solid rgb(207, 207, 210);
+  border-radius: 3px;
+  padding: 5px;
+}
+.faq-wrapper-active h3 {
+  margin-right: 15px;
+}
+.faq-wrapper-active p {
+  display: block;
+}
+.faq-wrapper-active .faq-down-arrow-symbol {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  cursor: pointer;
+  display: none;
+}
+.faq-wrapper-active .faq-up-arrow-symbol {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+/*=============================================
+=            Pages                            =
+=============================================*/
+.our-packge-section h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-comment-section {
+  text-align: center;
+  margin-top: 45px;
+}
+.clients-comment-section h1 {
+  margin-bottom: 45px;
+}/*# sourceMappingURL=global.css.map */

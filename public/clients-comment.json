@@ -1,0 +1,23 @@
+[
+    {
+        "id": "b1",
+        "name": "Regina Miles",
+        "profession": "Banker",
+        "content": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year",
+        "img": "https://i.ibb.co/Z1QyPCQ/person-1.png"
+    },
+    {
+        "id": "b2",
+        "name": "Jone Drake",
+        "profession": "teacher",
+        "content": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year.",
+        "img": "https://i.ibb.co/TtWhqKr/person-2.png"
+    },
+    {
+        "id": "b3",
+        "name": "Cret Yater",
+        "profession": "writer",
+        "content": "Slate helps you see how many more days you need to work to reach your financial goal for the month and year.",
+        "img": "https://i.ibb.co/YXW8mj7/person-3.png"
+    }
+]
