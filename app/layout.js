@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import '../styles/Sass/global.css'
 import Navbar from '@/components/nave-bar/Navbar'
 import Footer from '@/components/footer/Footer'
+import AuthProvider from '@/components/auth-provider/AuthProvider'
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,9 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
+        <AuthProvider>
+          <Navbar></Navbar>
+          {children}
+          <Footer></Footer>
+        </AuthProvider>
       </body>
     </html>
   )

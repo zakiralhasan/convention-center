@@ -462,13 +462,16 @@ select {
 .hero-section-content__button {
   display: block;
 }
+.hero-section-content__button a {
+  text-decoration: none;
+}
 @media screen and (max-width: 48rem) {
   .hero-section-content__button {
     display: none;
   }
 }
 
-button {
+.hero-btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,7 +576,7 @@ button {
   align-items: center;
   padding: 5px;
   text-align: center;
-  box-shadow: 0px 6px 15px -5px #888888;
+  box-shadow: 0 4px 11px rgba(157, 157, 157, 0.21);
 }
 .client-comments-wrapper img {
   width: 65px;
@@ -688,4 +691,52 @@ button {
 }
 .clients-comment-section h1 {
   margin-bottom: 45px;
+}
+
+.login-container {
+  max-width: 1166px;
+  margin: 0 auto;
+}
+
+.login-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 9px 6px;
+  background-color: rgb(209, 217, 220);
+  border-radius: 6px;
+}
+.login-wrapper h2 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 9px auto;
+  max-width: 220px;
+}
+.input-container input {
+  padding-left: 10px;
+  outline: none;
+}
+
+.login-btn-container {
+  max-width: 220px;
+  margin: 0 auto;
+}
+.login-btn-container button {
+  background-color: rgb(251, 127, 92);
+  border: none;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+.login-btn-container p {
+  color: gray;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.login-btn-container a {
+  text-decoration: none;
 }/*# sourceMappingURL=global.css.map */

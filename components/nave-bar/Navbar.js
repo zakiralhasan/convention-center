@@ -17,10 +17,10 @@ const Navbar = () => {
 
 
     const navBar = <ul>
-        <Link href={'#'}>
+        <Link href="/">
             <li>Home</li>
         </Link>
-        <Link href={'#'}>
+        <Link href="#">
             <li>About Us</li>
         </Link>
         <Link href={'#'}>

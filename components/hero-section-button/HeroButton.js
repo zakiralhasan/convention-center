@@ -3,7 +3,7 @@ import { BsArrowRight } from 'react-icons/bs';
 const HeroButton = () => {
     return (
         <>
-            <button>
+            <button className='hero-btn-container'>
                 Explore our album
                 <BsArrowRight />
             </button>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import img1 from "../../public/assets/images/wedding.png"
 import { BsArrowRight } from 'react-icons/bs';
 import HeroButton from "../hero-section-button/HeroButton";
+import Link from "next/link";
 
 
 const HeroSection = () => {
@@ -17,7 +18,9 @@ const HeroSection = () => {
                 <h3>Every moment is Precious</h3>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <div className="hero-section-content__button">
-                    <HeroButton />
+                    <Link href="/album">
+                        <HeroButton />
+                    </Link>
                 </div>
             </div>
         </div>
