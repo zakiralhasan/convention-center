@@ -17,7 +17,9 @@
     list-style: none;
   }
 }
-
+.nav-wrapper {
+  display: flex;
+}
 .navbar-main {
   display: block;
 
@@ -32,8 +34,8 @@
 
 .navbar-responsive {
   position: absolute;
-  top: 37px;
-  right: 0;
+  top: 40px;
+  left: 0;
   background-color: white;
   display: none;
   z-index: 99;
@@ -56,5 +58,44 @@
 
   @include tablet {
     display: block;
+  }
+}
+
+.nav-avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 1rem;
+  position: relative;
+  @include tablet {
+    margin-left: 3px;
+  }
+  button {
+    border: none;
+    background-color: rgb(80, 78, 78);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+  }
+}
+
+.profile-bar {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 99;
+  background-color: white;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 1rem;
+    padding-right: 20px;
   }
 }

@@ -264,6 +264,10 @@ select {
   list-style: none;
 }
 
+.nav-wrapper {
+  display: flex;
+}
+
 .navbar-main {
   display: block;
 }
@@ -278,8 +282,8 @@ select {
 
 .navbar-responsive {
   position: absolute;
-  top: 37px;
-  right: 0;
+  top: 40px;
+  left: 0;
   background-color: white;
   display: none;
   z-index: 99;
@@ -304,6 +308,47 @@ select {
   .nav-menue-icon {
     display: block;
   }
+}
+
+.nav-avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 1rem;
+  position: relative;
+}
+@media screen and (max-width: 48rem) {
+  .nav-avatar-container {
+    margin-left: 3px;
+  }
+}
+.nav-avatar-container button {
+  border: none;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-avatar-container img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.profile-bar {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 99;
+  background-color: white;
+}
+.profile-bar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 1rem;
+  padding-right: 20px;
 }
 
 .footer-wrapper {

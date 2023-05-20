@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useSession, signIn } from 'next-auth/react';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Login = () => {
-    // const { data: session } = useSession()
+    const { data: session } = useSession()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -17,6 +18,9 @@ const Login = () => {
                 email,
                 password
             });
+            if (session) {
+                toast.success("Login successfully!")
+            }
             console.log(data)
         } catch (error) {
             console.log(error)
@@ -46,6 +50,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </>
     );
 };

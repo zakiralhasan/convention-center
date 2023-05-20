@@ -4,6 +4,8 @@ import '../styles/Sass/global.css'
 import Navbar from '@/components/nave-bar/Navbar'
 import Footer from '@/components/footer/Footer'
 import AuthProvider from '@/components/auth-provider/AuthProvider'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata = {
   title: 'Create Next App',
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer></Footer>
         </AuthProvider>
+        {/* <ToastContainer /> */}
       </body>
     </html>
   )

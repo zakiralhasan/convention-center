@@ -4,6 +4,7 @@ import FAQSection from "@/components/frequently asked question/FAQSection";
 import HeroSection from "@/components/hero-section/HeroSection";
 import PackageCard from "@/components/package-card/PackageCard";
 
+
 export default function Home() {
   return (
     <>

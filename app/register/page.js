@@ -3,6 +3,7 @@
 import axios from 'axios';
 import Link from 'next/link';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Register = () => {
     const [name, setName] = useState('')
@@ -16,6 +17,9 @@ const Register = () => {
                 name, email, password
             })
             console.log(data)
+            if (data.status !== 500) {
+                toast.success('Your account has been successfully created!')
+            }
             setName('')
             setEmail('')
             setPassword('')
@@ -58,7 +62,7 @@ const Register = () => {
                         </div>
                     </div>
                 </form>
-
+                <ToastContainer />
                 {/* } */}
             </div>
         </>
